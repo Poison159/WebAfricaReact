@@ -3,26 +3,28 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import { useSelector,useDispatch } from "react-redux";
-import {increment,decrement} from '../features/counterSlice';
+import {toggleLogIn,selectUser} from '../features/userSlice';
+import { useNavigate } from "react-router-dom";
 
 export const Login  = () => {
     
-    const count         = useSelector((state)=> state.counter.value);
-    const dispatch      = useDispatch();
+    const user              = useSelector(selectUser);
+    const dispatch          = useDispatch();
+    const navigate          = useNavigate();
 
     const handleSubmit = (event) => {
         
         event.preventDefault();
-        const username = event.target[0].value;
+        const email = event.target[0].value;
         const password = event.target[1].value;
-        dispatch(increment());
+        dispatch(toggleLogIn({email:email,isloggedIn:true}));
         alert(event.target[0].value);
-       
+        //navigate("/");
       }
 
     return(
         <div className="row mid">
-            <h4> status : {count}</h4>
+            {/* <h4>user: {user}</h4> */}
             <Card className="middle">
                 <Card.Body className="middle">
                     <Form onSubmit={handleSubmit}>
@@ -30,7 +32,7 @@ export const Login  = () => {
                             <Form.Label>Email address</Form.Label>
                             <Form.Control type="email" placeholder="Enter email" />
                             <Form.Text className="text-muted">
-                            We'll never share your email with anyone else.
+                                We'll never share your email with anyone else.
                             </Form.Text>
                         </Form.Group>
 
@@ -38,7 +40,7 @@ export const Login  = () => {
                             <Form.Label>Password</Form.Label>
                             <Form.Control type="password" placeholder="Password" />
                         </Form.Group>
-                        <button class="btn btn-primary" aria-label="log in">log in</button> 
+                        <button className="btn btn-primary" type="submit" aria-label="log in">log in</button> 
                     </Form>
                 </Card.Body>
             </Card>

@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.middle {
+  margin: auto;
+  width: 50%;
+}
+
+.mid{
+  background:linear-gradient(#C3DD34, #96AB26);
+  justify-content:"center";
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  flex-direction:column;
+}
+
+.cardText{
+  align-items: center;
+}

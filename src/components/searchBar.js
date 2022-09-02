@@ -33,17 +33,28 @@ const SearchBar = () => {
     return(
         
             <div className="input-group"style={{paddingTop:"5px",paddingBottom:"100px"}}>
-                {isGeolocationAvailable && coords ? <div>
+                {isGeolocationAvailable && coords ? 
+                <div>
                     <div className="form-outline">
                             <input style={{width:"500px"}} type="search" placeholder={add} id="form1" className="form-control" />
-                        </div>
-                        <br/>
-                        <button type="button" className="btn btn-small btn-primary">
-                            CHECK AGAIN
-                        </button>
-                    </div> :
+                    </div>
+                    <br/>
+                    <button type="button" className="btn btn-small btn-primary">
+                        CHECK AGAIN
+                    </button>
+                </div> :
 
-                    <></>
+                <div>
+                <div className="form-outline">
+                        <input style={{width:"500px"}} type="search" placeholder="" id="form1" className="form-control" />
+                </div>
+                <br/>
+                <button type="button" className="btn btn-small btn-primary">
+                    CHECK AGAIN
+                </button>
+                </div> 
+                    
+         
                 
             }
                 

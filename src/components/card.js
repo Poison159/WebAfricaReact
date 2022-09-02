@@ -17,7 +17,7 @@ const Card = (props) => {
                     </p>
                     <header>
                         <h1> R399 </h1>
-                        <span>/month</span>
+                        <span style={{color:"#C3DD34"}}>/month</span>
                     </header>
                     <div style={{backgroundColor:"#F2F2F2",textAlign:"center"}}>
                         <ul style={{listStyleType:"none",textAlign:"left",display:"inline-block"}}>

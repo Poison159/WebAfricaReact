@@ -1,10 +1,15 @@
 import React from "react";
-
+import MainSection from "../components/mainSection";
+import FibreOptions from "../components/fibreOptions";
+import Speed from "../components/speed";
 
 export const Home = () => {
-    
     return(
-         <h1>Hey username</h1>
+        <>
+            <MainSection/>
+            <FibreOptions/>
+            <Speed/>
+        </>
     )
 }
 export default Home;

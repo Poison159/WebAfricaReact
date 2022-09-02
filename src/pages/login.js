@@ -10,21 +10,19 @@ export const Login  = () => {
     
     const user              = useSelector(selectUser);
     const dispatch          = useDispatch();
-    const navigate          = useNavigate();
+
 
     const handleSubmit = (event) => {
         
         event.preventDefault();
         const email = event.target[0].value;
         const password = event.target[1].value;
-        dispatch(toggleLogIn({email:email,isloggedIn:true}));
-        alert(event.target[0].value);
-        //navigate("/");
+        dispatch(toggleLogIn({email:email,isLoggedIn:true}));
+       
       }
 
     return(
         <div className="row mid">
-            {/* <h4>user: {user}</h4> */}
             <Card className="middle">
                 <Card.Body className="middle">
                     <Form onSubmit={handleSubmit}>

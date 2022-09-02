@@ -12,7 +12,7 @@ const Routing = () => {
         <BrowserRouter>
             <Nav/>
             <Routes> 
-                <Route path="/" element={<RequireAuth ><Home /></RequireAuth> } />
+                <Route path="/" element={<RequireAuth><Home /></RequireAuth>} /> 
                 <Route path="/login" element={<Login />} />
             </Routes>
         </BrowserRouter>

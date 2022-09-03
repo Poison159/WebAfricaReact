@@ -12,7 +12,7 @@ const CardFooter = () => {
             <div style={{textAlign:"center",backgroundColor:"#F2F2F2"}}>
                 <p>YOU SAVE :<span style={{fontWeight:"bold"}}>R2020</span></p>
             </div>
-            <div style={{margin:"auto",textAlign:"center"}}>
+            <div style={{margin:"auto",textAlign:"center",paddingBottom:"50px"}}>
                 <button style={{borderRadius:"31px",width:"330px",height:"62px"}} className="btn btn-danger">GET STARTED</button>
             </div>
         </div>

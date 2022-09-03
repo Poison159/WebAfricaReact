@@ -4,7 +4,7 @@ import React from "react"
 const Hype = () => {
     return (
         <div class="mid" style={{paddingTop:53,paddingBottom:53}}>
-            <h2 style={{textAlign: 'center'}}>What's with the fibre hype</h2>
+            <h2 style={{textAlign: 'center'}}>What's with the fibre hype ?</h2>
             <div className="row" style={{paddingTop:53,paddingBottom:53,paddingLeft:53,paddingRight:53}}>
                 <div className="col-md-4">
                     <div className="card">

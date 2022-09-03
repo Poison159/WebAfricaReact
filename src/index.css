@@ -22,7 +22,6 @@ code {
   justify-content:"center";
   display: flex;
   flex-flow: column;
-  height: 100%;
   flex-direction:column;
 }
 

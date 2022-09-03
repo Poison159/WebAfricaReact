@@ -15,7 +15,7 @@ const Nav = () => {
                 <div className="col-md-4 text-center">
                     {
                         !user.email ?
-                        <p> Get Fast Fibre | Get Quick ADSL | Get Relaiable ADSL </p>
+                        <p> Get Fast Fibre | Get Quick LTE | Get Relaiable ADSL </p>
                         :
                         <p>Logged is as {user.email}</p>
                     }

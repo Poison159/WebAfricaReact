@@ -3,9 +3,9 @@ import React from "react"
 
 const Speed = () => {
     return(
-        <div style={{paddingTop:"119px"}}>
+        <div style={{paddingTop:"80px"}}>
             <h2 style={{fontWeight:"bold"}}>Select your need for speed</h2>
-            <h4>From lightspeed to normal, this is what can be handled by your need for speed.</h4>
+            <h5 style={{paddingBottom:"60px"}} >From lightspeed to normal, this is what can be handled by your need for speed.</h5>
             <table class="table table-bordered">
             <thead>
                 <tr>

@@ -10,7 +10,7 @@ const Card = (props) => {
                     <div className="col-md-6"> <p style={{textAlign:"center"}}>Home Packages</p> </div>
                     <div className="col-md-6"> <p style={{textAlign:"center",backgroundColor:"#F2F2F2"}}>Business Packages</p> </div>
                     <br/>
-                    <div className="row mid"> <h4 style={{textAlign:"center"}}> 10 / 5 Mbps Uncapped</h4> </div>
+                    <div style={{height:"80px"}} className="mid"> <h4 style={{textAlign:"center",color:"#FFFFFF",margin:"auto"}}> 10/5 Mbps Uncapped</h4> </div>
                     <br/>
                     <p style={{textAlign:"center",wordWrap: "break-word"}} > 
                         The perfect packages for 3-4 users in a household for general use, HD streaming and who are happy with the occasional lag in gaming.
@@ -25,14 +25,14 @@ const Card = (props) => {
                                 <svg style={{paddingRight:"5px"}} xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-arrows-expand" viewBox="0 0 16 16">
                                     <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z"/>
                                 </svg>
-                                10 mbps Download / 10 Mbps Upload View our Speed Guide
+                                <span style={{fontWeight:"bold"}}>10 mbps</span> Download / <span style={{fontWeight:"bold"}}>10 Mbps</span> Upload
                             </li>
                             <li>
                                 <svg style={{paddingRight:"5px"}} xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-calendar-check" viewBox="0 0 16 16">
                                 <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
                                 <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
                                 </svg>
-                                14 Day Installation Time
+                                <span style={{fontWeight:"bold"}}>14 Day</span> Installation Time
                             </li>
                             <li>
                                 <svg style={{paddingRight:"5px"}} xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" className="bi bi-bicycle" viewBox="0 0 16 16">

@@ -22,7 +22,7 @@ export const Login  = () => {
       }
 
     return(
-        <div className="row mid">
+        <div className="row mid main">
             <Card className="middle">
                 <Card.Body className="middle">
                     <Form onSubmit={handleSubmit}>

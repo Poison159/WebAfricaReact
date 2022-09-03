@@ -8,9 +8,9 @@ const Nav = () => {
     const dispatch          = useDispatch();
     return(
         <>
-            <div className="row" style={{backgroundColor:"#6AD5F2"}}>
+            <div className="row" style={{backgroundColor:"#6AD5F2",height:"80px"}}>
                 <div className="col-md-4">
-                    <h4>WebAfrica</h4>
+                    <img style={{width:"180px",height:"80px"}} src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/u9o613qosjxkpf5v9nrv" />
                 </div>
                 <div className="col-md-4 text-center">
                     {
@@ -23,8 +23,8 @@ const Nav = () => {
                 <div className="col-md-4 right">
                     { 
                         user.email ?
-                        <div className="float-right">
-                            <button style={{float:"right"}} onClick={() => {dispatch(toggleLogOut());}} className="btn btn-primary">log out</button>
+                        <div className="float-right" style={{float:"right",paddingTop:"20px"}}>
+                            <button  onClick={() => {dispatch(toggleLogOut());}} className="btn btn-primary">log out</button>
                         </div> 
                         :
                        <></>

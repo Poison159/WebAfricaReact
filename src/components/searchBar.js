@@ -31,34 +31,31 @@ const SearchBar = () => {
         },[add,coords])
 
     return(
-        
-            <div className="input-group"style={{paddingTop:"5px",paddingBottom:"100px"}}>
-                {isGeolocationAvailable && coords ? 
-                <div>
-                    <div className="form-outline">
+         
+        <div className="input-group"style={{paddingTop:"5px",paddingBottom:"100px"}}>
+            {isGeolocationAvailable && coords ? 
+            <div>
+                <div className="input-group">
+                    <div className="form-control">
                             <input style={{width:"500px"}} type="search" placeholder={add} id="form1" className="form-control" />
                     </div>
-                    <br/>
-                    <button type="button" className="btn btn-small btn-primary">
-                        CHECK AGAIN
-                    </button>
-                </div> :
-
-                <div>
-                <div className="form-outline">
-                        <input style={{width:"500px"}} type="search" placeholder="" id="form1" className="form-control" />
-                </div>
-                <br/>
-                <button type="button" className="btn btn-small btn-primary">
-                    CHECK AGAIN
-                </button>
+                    <div style={{paddingLeft:"10px"}} className="input-group-addon">
+                        <button style={{backgroundColor:"#96AB26"}} type="button" className="btn btn-lg">
+                            CHECK AGAIN  <span class="fa fa-trash-o fa-lg" aria-hidden="true"></span>
+                        </button>
+                    </div>
                 </div> 
-                    
-         
-                
+                <p style={{color: "rgba(0, 0, 0, 0.5)"}}>Wrong place ? <a style={{color: "rgba(0, 0, 0, 0.5)"}} href="#">Change your address</a> or <a style={{color: "rgba(0, 0, 0, 0.5)"}} href="#">Use our interactive map </a></p>
+            </div>   
+            :
+            <div>
+                    <p>Checking ...</p>
+            </div>   
             }
-                
-            </div>
+                        
+    </div>
+       
+           
     
     )
 }

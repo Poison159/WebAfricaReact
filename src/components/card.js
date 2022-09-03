@@ -4,7 +4,7 @@ import CardFooter from "./cardFooter"
 const Card = (props) => {
     return(
         <div className="card">
-            <img className="card-img-top center" style={{width:"50%",margin:"auto"}} src={props.src} alt="Card img cap"/>
+            <img className="card-img-top center" style={{width:"300px",height:"180px",margin:"auto"}} src={props.src} alt="Card img cap"/>
             <div className="card-body">
                 <div className="row">
                     <div className="col-md-6"> <p style={{textAlign:"center"}}>Home Packages</p> </div>

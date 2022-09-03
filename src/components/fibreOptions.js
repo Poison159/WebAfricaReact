@@ -6,9 +6,9 @@ const FibreOptions = () => {
  
 
         return(   
-            <div style={{paddingTop:"80px"}}>
-                <h4>What are my fibre options</h4>
-                <p>fiber internet is the best and most reliable way toconnect to the internet. if youcan get it then get it</p>
+            <div style={{paddingTop:"80px",paddingLeft:"10px"}}>
+                <h2 style={{fontWeight:"bold"}}>What are my Fibre options</h2>
+                <p>Fiber internet is the best and most reliable way to connect to the internet. If you can get it then get it</p>
                 <p>Currently the following options are available in your area :</p>
                 <br/>
                 <div className="row">

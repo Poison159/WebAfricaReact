@@ -41,3 +41,15 @@
   max-width: 1440px;
   margin: auto;
 }
+
+.main{
+height:100vh;
+}
+
+.w_text{
+  color:white;
+}
+
+.zoom{
+  zoom:1.8;
+}

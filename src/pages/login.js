@@ -7,17 +7,15 @@ import {toggleLogIn,selectUser} from '../features/userSlice';
 import { useNavigate } from "react-router-dom";
 
 export const Login  = () => {
-    
-    const user              = useSelector(selectUser);
     const dispatch          = useDispatch();
-
 
     const handleSubmit = (event) => {
         
         event.preventDefault();
-        const email = event.target[0].value;
-        const password = event.target[1].value;
-        dispatch(toggleLogIn({email:email,isLoggedIn:true}));
+        const email     = event.target[0].value;
+        const password  = event.target[1].value;
+        const user      = {email:email,isLoggedIn:true,password:password} 
+        dispatch(toggleLogIn(user));
        
       }
 

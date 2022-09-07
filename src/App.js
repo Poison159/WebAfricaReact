@@ -11,14 +11,14 @@ import Nav from "./components/navbar"
 
 function App() {
 
-  const auth   = useSelector(selectUser).isLoggedIn;
-
+  const auth      = useSelector(selectUser).isLoggedIn;
+  const localUser = localStorage.getItem("user");
 
   return (
         <div className="content">
           <Nav/>
           {!auth && <Login/>} 
-          {auth && <Home/>}
+          { auth &&  <Home/>}
           {/* <Routing/> */}
         </div>
   );

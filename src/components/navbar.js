@@ -24,7 +24,9 @@ const Nav = () => {
                     { 
                         user.email ?
                         <div className="float-right" style={{float:"right",paddingTop:"20px"}}>
-                            <button  onClick={() => {dispatch(toggleLogOut());}} className="btn btn-primary">log out</button>
+                            <button  onClick={() => {
+                                dispatch(toggleLogOut());
+                                }} className="btn btn-primary">log out</button>
                         </div> 
                         :
                        <></>
